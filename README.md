@@ -1,18 +1,16 @@
 # Dr. Maya Reynolds, PsyD – Therapy Website
 
-A production-quality, bespoke clinical psychology website designed and engineered for **Dr. Maya Reynolds, PsyD** (Licensed Clinical Psychologist in Santa Monica, California). 
-
-This project was developed for the **Grow My Therapy** Front-End Developer Internship assignment. It reproduces the sophisticated editorial layout, spatial hierarchy, and refined typography of the structural reference ([Conejo Valley Family Counseling](https://www.conejovalleycounseling.com/home)), while delivering a completely original, California-inspired visual identity and adhering strictly to Dr. Reynolds' clinical profile.
+A production-ready responsive therapy website designed for Dr. Maya Reynolds, PsyD, as part of the Grow My Therapy Front-End Developer Internship assignment. The project uses the provided Conejo Valley Family Counseling homepage as a structural reference while creating a distinct visual identity and content experience based strictly on Dr. Reynolds' supplied profile.
 
 ---
 
 ## 🎯 Assignment Objective & Core Evaluation Pillars
 
-1. **UI Cloning Accuracy (25%)**: Faithfully captures the structural intelligence of the reference—asymmetrical hero balance, editorial serif headlines, alternating image/narrative rhythm, hairline grid dividers, full-width statement section, and rich multi-column footer.
-2. **Theme & Design Sense (25%)**: Transcends generic SaaS cards or hospital clinical clichés by establishing a bespoke palette: Deep Sage, Warm Sand, Muted Terracotta, Soft Ivory, and Deep Charcoal.
-3. **Copywriting & Image Quality (10%)**: Strictly grounded in Dr. Reynolds' clinical profile with zero hallucinated credentials, fees, or testimonials. Integrates her authentic portrait and both official Santa Monica office interior photographs.
+1. **UI Cloning Accuracy (25%)**: Closely follows the reference homepage's editorial structure, asymmetric composition, spacing rhythm, typography hierarchy, image/text balance, and section flow.
+2. **Theme & Design Sense (25%)**: Establishes a warm, grounded visual identity suited to a modern psychology practice, utilizing a cohesive palette of Deep Sage, Warm Sand, Muted Terracotta, Soft Ivory, and Deep Charcoal.
+3. **Copywriting & Image Quality (10%)**: Strictly grounded in Dr. Reynolds' clinical profile with zero unsupported claims, unverified credentials, or external additions. Integrates her authentic portrait and both official Santa Monica office interior photographs.
 4. **Creative Thinking & New Section (10%)**: Introduces a dedicated, bespoke **"Our Office"** section (*"A Calm Space to Slow Down"*) featuring an asymmetric dual-photograph editorial layout with in-person and telehealth details.
-5. **Communication & Technical Polish (30%)**: Accessible (WCAG 2.1 AA), fully responsive (1440px to 375px), zero console or build errors, semantic HTML, and fast server-rendered architecture.
+5. **Communication & Technical Polish (30%)**: Designed with WCAG 2.1 AA accessibility principles, fully responsive (1440px to 375px), zero console or build errors, semantic HTML, and Next.js App Router with server components by default.
 
 ---
 
@@ -24,7 +22,7 @@ This project was developed for the **Grow My Therapy** Front-End Developer Inter
 - **Styling**: Tailwind CSS v4 with CSS Theme Tokens
 - **Typography**: `next/font/google` (`Cormorant Garamond` & `DM Sans`)
 - **Images**: `next/image` with responsive `sizes` and WebP/AVIF generation
-- **SEO & Structured Data**: Native Metadata API + Schema.org JSON-LD (`Physician` / `MedicalBusiness`)
+- **SEO & Structured Data**: Native Metadata API + Schema.org JSON-LD describing therapist and practice information
 - **Code Quality**: ESLint 9 + TypeScript Strict Mode
 
 ---
@@ -36,7 +34,7 @@ This project was developed for the **Grow My Therapy** Front-End Developer Inter
 - **Secondary (`#E8DED0` — Warm Sand)**: Natural organic tone providing warmth in offset photo backdrops and quote accents.
 - **Accent (`#C9826B` — Muted Terracotta)**: Earthy California terracotta used sparingly for script accents, subheadings, and status indicators.
 - **Background (`#F8F5EF` — Soft Ivory)**: Warm off-white canvas replacing sterile pure white to eliminate glare and create an inviting ambiance.
-- **Text (`#29332F` — Deep Charcoal)**: High-contrast (WCAG AAA) warm dark tone softer than harsh pure black.
+- **Text (`#29332F` — Deep Charcoal)**: High-contrast warm dark tone softer than harsh pure black.
 - **Muted Text (`#65716C`)**: Charcoal-sage tone for secondary body text and captions.
 - **Border (`#D8D0C4`)**: Minimalist warm stone border tone.
 
@@ -120,6 +118,8 @@ maya-reynolds-therapy/
 
 ## ♿ Accessibility (a11y)
 
+Designed with WCAG 2.1 AA accessibility principles across all core components:
+
 - **Semantic HTML5**: Native `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<address>`, and `<footer>` elements.
 - **Heading Hierarchy**: Strictly one `<h1>`, followed by structured `<h2>` and `<h3>` tags.
 - **Skip Link**: Built-in keyboard skip link (`href="#main-content"`).
@@ -136,7 +136,7 @@ maya-reynolds-therapy/
 
 - **Page Title**: `Therapy in Santa Monica, CA | Dr. Maya Reynolds, PsyD`
 - **Meta Description**: Accurate summary highlighting in-person Santa Monica therapy and California telehealth.
-- **Structured Data**: Schema.org `Physician` / `MedicalBusiness` JSON-LD schema with clinic address and specialties.
+- **Structured Data**: Schema.org JSON-LD describing the therapist/practice information provided in the assignment.
 - **Social Metadata**: OpenGraph and Twitter Card tags configured with portrait preview.
 - **Auto-Generated Sitemaps**: `app/sitemap.ts` and `app/robots.ts` built into production bundle.
 
@@ -183,3 +183,13 @@ npm run build
 npm run start
 ```
 The production bundle builds with 0 errors and 0 warnings.
+
+---
+
+## 🤖 AI-Assisted Development
+
+AI coding tools were used as development assistants during implementation, including component scaffolding, code refinement, debugging, and responsive QA.
+
+The implementation was reviewed and iteratively refined throughout development, with manual visual and functional verification across desktop, tablet, and mobile viewports.
+
+The final content was kept strictly aligned with the provided Dr. Maya Reynolds profile.

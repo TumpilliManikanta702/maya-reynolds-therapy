@@ -78,7 +78,7 @@ export const WHO_I_WORK_WITH_CONTENT = {
     },
     {
       id: "trauma-healing",
-      title: "Trauma Recovery & PTSD",
+      title: "Adults Healing From Trauma",
       tagline: "A safe, paced path toward reconnecting with safety",
       description:
         "A careful, paced approach for adults working through past experiences and their lasting effects on relationships, confidence, and sense of safety.",
