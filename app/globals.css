@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #49645A;
+  --color-primary-hover: #3B534B;
+  --color-primary-dark: #2F423B;
+  --color-primary-light: #EFF4F2;
+  --color-secondary: #E8DED0;
+  --color-secondary-light: #F5EFE7;
+  --color-secondary-dark: #D4C6B3;
+  --color-accent: #C9826B;
+  --color-accent-hover: #B8735D;
+  --color-accent-soft: #FAF0EB;
+  --color-script: #548074;
+  --color-script-hover: #43695F;
+  --color-background: #FAF8F5;
+  --color-surface: #FFFFFF;
+  --color-text: #242E2B;
+  --color-muted: #616E68;
+  --color-border: #E2DDD5;
+  --color-border-light: #ECE7E0;
+
+  --font-serif: var(--font-cormorant), Georgia, serif;
+  --font-sans: var(--font-dm-sans), system-ui, -apple-system, sans-serif;
+  --font-script: var(--font-script), 'Alex Brush', cursive;
+}
+
+.font-script {
+  font-family: var(--font-script), 'Alex Brush', cursive;
+}
+
+:root {
+  --color-primary: #49645A;
+  --color-primary-hover: #3B534B;
+  --color-primary-light: #EFF4F2;
+  --color-secondary: #E8DED0;
+  --color-secondary-light: #F5EFE7;
+  --color-accent: #C9826B;
+  --color-accent-hover: #B8735D;
+  --color-script: #548074;
+  --color-background: #FAF8F5;
+  --color-surface: #FFFFFF;
+  --color-text: #242E2B;
+  --color-muted: #616E68;
+  --color-border: #E2DDD5;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #FAF8F5;
+  color: #242E2B;
+}
+
+body {
+  font-family: var(--font-dm-sans), system-ui, -apple-system, sans-serif;
+  background-color: #FAF8F5;
+  color: #242E2B;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: #E8DED0;
+  color: #29332F;
+}
+
+:focus-visible {
+  outline: 2px solid #49645A;
+  outline-offset: 3px;
+}
+
+/* Custom editorial link animation */
+.editorial-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.editorial-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: currentColor;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.editorial-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Accessibility: respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
