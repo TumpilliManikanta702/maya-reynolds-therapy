@@ -103,6 +103,7 @@ export default function AppointmentCTA() {
                     id="name"
                     name="name"
                     required
+                    suppressHydrationWarning
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     placeholder="Enter your name"
@@ -119,6 +120,7 @@ export default function AppointmentCTA() {
                     id="email"
                     name="email"
                     required
+                    suppressHydrationWarning
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     placeholder="you@example.com"
@@ -134,6 +136,7 @@ export default function AppointmentCTA() {
                     <select
                       id="format"
                       name="format"
+                      suppressHydrationWarning
                       value={formData.format}
                       onChange={(e) => setFormData({ ...formData, format: e.target.value })}
                       className="w-full px-3.5 py-2.5 bg-[#FAF8F5] border border-[#E2DDD5] rounded-lg text-sm font-sans text-[#242E2B] focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#49645A]"
@@ -150,6 +153,7 @@ export default function AppointmentCTA() {
                     <select
                       id="interest"
                       name="interest"
+                      suppressHydrationWarning
                       value={formData.interest}
                       onChange={(e) => setFormData({ ...formData, interest: e.target.value })}
                       className="w-full px-3.5 py-2.5 bg-[#FAF8F5] border border-[#E2DDD5] rounded-lg text-sm font-sans text-[#242E2B] focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#49645A]"
@@ -170,6 +174,7 @@ export default function AppointmentCTA() {
                     id="message"
                     name="message"
                     rows={3}
+                    suppressHydrationWarning
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     placeholder="Share a few words about what you hope to work on..."
@@ -179,6 +184,7 @@ export default function AppointmentCTA() {
 
                 <button
                   type="submit"
+                  suppressHydrationWarning
                   className="w-full py-3.5 px-6 rounded-full bg-[#49645A] hover:bg-[#3B534B] text-[#FAF8F5] text-[0.8rem] font-medium tracking-[0.18em] uppercase transition-all shadow-xs hover:shadow-md focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#49645A] focus-visible:ring-offset-2 cursor-pointer"
                 >
                   {FINAL_CTA_CONTENT.buttonText}

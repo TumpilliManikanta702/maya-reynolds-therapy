@@ -142,6 +142,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={`${cormorantGaramond.variable} ${dmSans.variable} ${alexBrush.variable} scroll-smooth`}
     >
       <head>
@@ -150,7 +151,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-screen bg-[#FAF8F5] text-[#242E2B] font-sans antialiased selection:bg-[#E8DED0] selection:text-[#242E2B]">
+      <body
+        suppressHydrationWarning
+        className="min-h-screen bg-[#FAF8F5] text-[#242E2B] font-sans antialiased selection:bg-[#E8DED0] selection:text-[#242E2B]"
+      >
         {children}
       </body>
     </html>

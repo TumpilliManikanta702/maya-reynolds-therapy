@@ -52,6 +52,7 @@ export default function FAQ() {
                   onClick={() => toggleAccordion(index)}
                   aria-expanded={isOpen}
                   aria-controls={contentId}
+                  suppressHydrationWarning
                   className="w-full py-6 px-6 sm:px-8 flex items-center justify-between text-left focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#49645A] hover:bg-[#FAF8F5]/80 transition-colors"
                 >
                   <span className="font-serif text-xl sm:text-2xl text-[#242E2B] font-normal pr-4 group-hover:text-[#49645A] transition-colors">

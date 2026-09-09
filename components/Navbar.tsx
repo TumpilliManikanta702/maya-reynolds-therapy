@@ -129,6 +129,7 @@ export default function Navbar() {
           aria-expanded={isOpen}
           aria-controls="mobile-navigation-drawer"
           aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+          suppressHydrationWarning
           className="md:hidden inline-flex items-center justify-center p-2.5 text-[#29332F] hover:text-[#49645A] focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#49645A] rounded-sm transition-colors"
         >
           <span className="sr-only">{isOpen ? "Close menu" : "Open menu"}</span>
